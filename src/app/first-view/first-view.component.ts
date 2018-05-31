@@ -19,6 +19,7 @@ export class FirstViewComponent implements OnInit {
 
     popup = window.open('https://gjy47700.live.dynatrace.com/#dashboard;id=d51464bd-88cc-4a81-afe6-0a1956e2d96d;gtf=l_7_DAYS', "dynatrace", 'fullscreen=yes' );
     setTimeout(() => {
+      popup.focus();
       popup.close();
     },5500);
   }

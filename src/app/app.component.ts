@@ -19,6 +19,6 @@ export class AppComponent {
         this.count = 1;
       }
       this.router.navigate(['view'+this.count]);
-    }, 5000)
+    }, 10000)
   }
 }

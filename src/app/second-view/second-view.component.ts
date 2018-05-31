@@ -14,9 +14,11 @@ export class SecondViewComponent implements OnInit {
     let x = screen.width/2 - 700/2;
     let y = screen.height/2 - 450/2;
 
+    window.name = 'parent';
+
     popup2 = window.open('https://logentries.com/app/79b6bc3a#/new-dashboards/31215ee5-51af-419f-8a96-587124e2124b', "logentries", 'fullscreen=yes' );
+    window.parent.focus();
     setTimeout(() => {
-      popup2.focus();
       popup2.close();
     },5500);
 
